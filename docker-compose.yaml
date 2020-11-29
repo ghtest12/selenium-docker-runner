@@ -18,7 +18,7 @@ services:
     environment:
       - HUB_HOST=hub
   contact-us:
-    image: subbusdockerhub/selenium-docker
+    image: subbusdocker/selenium-docker
     depends_on:
       - chrome
       - firefox
@@ -29,7 +29,7 @@ services:
     volumes:
       - ./Results/ContactUs:/usr/share/udemy/test-output
   home-links:
-    image: subbusdockerhub/selenium-docker
+    image: subbusdocker/selenium-docker
     depends_on:
       - chrome
       - firefox
