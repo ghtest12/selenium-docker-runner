@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage("Run Test"){
 			steps{
-				bat "docker-compose up contactusverification checklinksonhome"
+				bat "docker-compose up contact-us home-links"
 			}
 		}
 		stage("Bring Grid Down"){
