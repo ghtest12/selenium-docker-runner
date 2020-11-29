@@ -2,7 +2,9 @@ pipeline {
 	agent any
 	stages{
 		stage("Start Grid"){
-			sh "docker-compose up -d hub chrome firefox"
+			steps{
+				sh "docker-compose up -d hub chrome firefox"
+			}
 		}
 		stage("Run Test"){
 			steps{
