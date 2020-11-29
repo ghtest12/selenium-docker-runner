@@ -38,4 +38,4 @@ services:
       - HUB_HOST=hub
       - MODULE=checklinksonhome.xml
     volumes:
-      - C:\Users\padal\HomeVerification:/usr/share/udemy/test-output
+      - C:\Users\padal\Results\HomeVerification:/usr/share/udemy/test-output
