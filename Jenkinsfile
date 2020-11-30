@@ -18,7 +18,7 @@ pipeline {
 	}
 	post{
 		always{
-			archiveArtifacts artifacts: 'C:\Users\padal\Results\**'
+			archiveArtifacts artifacts: 'C:/Users/padal/Results/**'
 			//Use bat command in windows
 			//sh "docker-compose down"
 			bat "docker-compose down"
