@@ -25,7 +25,7 @@ services:
       - HUB_HOST=hub
       - MODULE=contactusverification.xml
     volumes:
-      - C:\Users\padal\Results\ContactUs:/usr/share/udemy/test-output
+      - C:\Users\padal\Results\output\ContactUs:/usr/share/udemy/test-output
   home-links:
     image: subbusdocker/selenium-docker
     depends_on:
@@ -36,4 +36,4 @@ services:
       - HUB_HOST=hub
       - MODULE=checklinksonhome.xml
     volumes:
-      - C:\Users\padal\Results\HomeVerification:/usr/share/udemy/test-output
+      - C:\Users\padal\Results\output\HomeVerification:/usr/share/udemy/test-output
