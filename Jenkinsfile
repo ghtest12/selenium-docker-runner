@@ -18,7 +18,7 @@ pipeline {
 	}
 	post{
 		always{
-			archiveArtifacts artifacts: 'output/**'
+			//archiveArtifacts artifacts: 'output/**'
 			//Use bat command in windows
 			//sh "docker-compose down"
 			bat "docker-compose down"
